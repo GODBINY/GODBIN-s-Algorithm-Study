@@ -1,0 +1,30 @@
+function solution(a, b, c, d) {
+    let arr = [a,b,c,d]
+    let info = {}
+    
+    console.log(arr)
+    arr.map((item,idx) => {
+        let copiedArr = [...arr]
+        copiedArr.splice(idx,1)
+        let a = copiedArr.some(e => e === item)
+        info[item] = a
+        console.log(a)
+    })
+    console.log(info)
+    console.log(Object.keys(info))
+    switch (Object.keys(info).length){
+        case 1:
+            return 1111 * info[0]
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+    }    
+    return null
+ }
+
+
+안풀려서 일단 여기다 적어둠.. 
